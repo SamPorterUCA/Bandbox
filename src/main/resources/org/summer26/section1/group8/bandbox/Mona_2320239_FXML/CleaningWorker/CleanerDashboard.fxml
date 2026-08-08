@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.summer26.section1.group8.bandbox.Mona_2320239.CleaningWorker.CleanerDashboardController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="181.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="13.0" layoutY="235.0" mnemonicParsing="false" onAction="#ReportDamaged" text="Report Damaged" />
+            <Button layoutX="13.0" layoutY="59.0" mnemonicParsing="false" onAction="#CustomerComplaint" text="Customer Complaint" />
+            <Button layoutX="12.0" layoutY="93.0" mnemonicParsing="false" onAction="#GenerateReports" text="Generate Reports" />
+            <Button layoutX="14.0" layoutY="271.0" mnemonicParsing="false" onAction="#RequestCleaningSupplies" text="Request Cleaning Supplies" />
+            <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" onAction="#ShiftAttendance" text="Shift Attendance" />
+            <Button layoutX="16.0" layoutY="24.0" mnemonicParsing="false" onAction="#AssignCleaning" text="Assign Cleaning" />
+            <Button layoutX="13.0" layoutY="164.0" mnemonicParsing="false" onAction="#MachineInformation" text="Machine Information" />
+            <Button layoutX="14.0" layoutY="129.0" mnemonicParsing="false" onAction="#RecordCleaning" text="Record Cleaning" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

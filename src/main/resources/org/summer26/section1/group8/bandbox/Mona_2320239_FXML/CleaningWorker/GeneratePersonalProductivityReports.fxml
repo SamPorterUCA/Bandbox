@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.summer26.section1.group8.bandbox.Mona_2320239.CleaningWorker.GeneratePersonalProductivityReportsController">
+   <children>
+      <Label layoutX="77.0" layoutY="59.0" text="Employee ID" />
+      <Label layoutX="63.0" layoutY="182.0" />
+      <Label layoutX="366.0" layoutY="70.0" text="Remarks" />
+      <TextArea fx:id="remarksTextArea" layoutX="421.0" layoutY="35.0" prefHeight="105.0" prefWidth="149.0" />
+      <ComboBox fx:id="employeeIDCombo" layoutX="150.0" layoutY="57.0" prefWidth="150.0" />
+      <Button layoutX="225.0" layoutY="102.0" mnemonicParsing="false" onAction="#generateReportButton" text="Generate Report" />
+      <TableView fx:id="tableview" layoutX="25.0" layoutY="191.0" prefHeight="200.0" prefWidth="552.0">
+        <columns>
+          <TableColumn fx:id="employeeIDCol" prefWidth="75.0" text="Employee ID" />
+          <TableColumn fx:id="employeeNameCol" prefWidth="101.99996948242188" text="Employee Name" />
+            <TableColumn fx:id="shiftCol" prefWidth="74.0" text="Shift" />
+            <TableColumn fx:id="attendanceNoteCol" prefWidth="114.0" text="Attendance Note" />
+            <TableColumn fx:id="remarksCol" prefWidth="79.33331298828125" text="Remarks" />
+            <TableColumn fx:id="dateCol" prefWidth="106.0" text="Date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchText" layoutX="25.0" layoutY="163.0" />
+      <Button layoutX="187.0" layoutY="163.0" mnemonicParsing="false" onAction="#searchButton" text="Search" />
+      <Button layoutX="251.0" layoutY="163.0" mnemonicParsing="false" onAction="#clearButton" text="Clear" />
+   </children>
+</AnchorPane>

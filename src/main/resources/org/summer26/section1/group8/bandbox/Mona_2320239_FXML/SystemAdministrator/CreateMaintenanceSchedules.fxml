@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.summer26.section1.group8.bandbox.Mona_2320239.SystemAdministrator.CreateMaintenanceSchedulesController">
+   <children>
+      <Label layoutX="39.0" layoutY="30.0" text="Equipment Name:" />
+      <TextField fx:id="equipmentNameText" layoutX="145.0" layoutY="26.0" />
+      <Label layoutX="39.0" layoutY="66.0" text="Maintanence type:" />
+      <TextField fx:id="maintanencetypeText" layoutX="145.0" layoutY="62.0" />
+      <Label layoutX="39.0" layoutY="104.0" text="Maintanence priority:" />
+      <ComboBox fx:id="maintanencepriorityCombobox" layoutX="164.0" layoutY="100.0" prefWidth="150.0" />
+      <DatePicker fx:id="maintanenceDateDatepicker" layoutX="164.0" layoutY="137.0" />
+      <Label layoutX="37.0" layoutY="141.0" text="Maintanence Date:" />
+      <TextArea fx:id="descriptionTextArea" layoutX="164.0" layoutY="177.0" prefHeight="81.0" prefWidth="200.0" />
+      <Label layoutX="38.0" layoutY="177.0" text="Description:" />
+      <Button layoutX="269.0" layoutY="292.0" mnemonicParsing="false" onAction="#makeScheduleButton" text="Make Schedule" />
+   </children>
+</AnchorPane>

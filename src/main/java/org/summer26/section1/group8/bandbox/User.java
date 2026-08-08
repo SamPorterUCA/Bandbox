@@ -1,20 +1,19 @@
 package org.summer26.section1.group8.bandbox;
 
-import javax.management.relation.Role;
+//import javax.management.relation.Role;
 
 public class User {
     private final String userId;
     private final String password;
     private final String name;
-    private final Role role;
+//    private final Role role;
     private final String branch;
     private final boolean hasOverdueInvoice;
 
-    public User(String userId, String password, String name, Role role, String branch, boolean hasOverdueInvoice) {
+    public User(String userId, String password, String name, String branch, boolean hasOverdueInvoice) {
         this.userId = userId;
         this.password = password;
         this.name = name;
-        this.role = role;
         this.branch = branch;
         this.hasOverdueInvoice = hasOverdueInvoice;
     }
@@ -39,7 +38,4 @@ public class User {
         return userId;
     }
 
-    public Role getRole() {
-        return role;
-    }
 }

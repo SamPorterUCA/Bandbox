@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.summer26.section1.group8.bandbox.Mona_2320239.CleaningWorker.AssignCleaningMethodtoEachOrder">
+   <children>
+      <TableView fx:id="tableview" layoutX="7.0" layoutY="147.0" prefHeight="200.0" prefWidth="583.0">
+        <columns>
+          <TableColumn fx:id="orderIDCol" prefWidth="115.33331298828125" text="Order ID" />
+          <TableColumn fx:id="customerNameCol" prefWidth="172.66665649414062" text="Customer Name" />
+            <TableColumn fx:id="cleaningMethodCol" prefWidth="155.3333740234375" text="Cleaning Method" />
+            <TableColumn fx:id="statusCol" prefWidth="138.6666259765625" text="Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchText" layoutX="14.0" layoutY="106.0" />
+      <Button layoutX="174.0" layoutY="106.0" mnemonicParsing="false" onAction="#searchButton" text="Search" />
+      <TextField fx:id="orderIDText" layoutX="99.0" layoutY="14.0" />
+      <Label layoutX="40.0" layoutY="18.0" text="Order ID:" />
+      <TextField fx:id="customerNameText" layoutX="392.0" layoutY="14.0" />
+      <Label layoutX="291.0" layoutY="18.0" text="Customer Name:" />
+      <ComboBox fx:id="statusCombo" layoutX="99.0" layoutY="51.0" prefWidth="150.0" />
+      <Label layoutX="40.0" layoutY="55.0" text="Status:" />
+      <Label layoutX="288.0" layoutY="55.0" text="Cleaning Method:" />
+      <TextField fx:id="cleaningMethodText" layoutX="392.0" layoutY="51.0" />
+      <Button layoutX="255.0" layoutY="76.0" mnemonicParsing="false" onAction="#SaveDataButton" text="Save Data" />
+      <Button layoutX="229.0" layoutY="106.0" mnemonicParsing="false" onAction="#clearButton" text="Clear" />
+   </children>
+</AnchorPane>

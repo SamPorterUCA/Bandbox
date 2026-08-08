@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="480.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.summer26.section1.group8.bandbox.Mona_2320239.SystemAdministrator.GenerateOperationalPerformanceReportsController">
+   <children>
+      <Label layoutX="52.0" layoutY="35.0" text="Employee ID:" />
+      <Label layoutX="315.0" layoutY="35.0" text="Report Period" />
+      <ComboBox fx:id="employeeIDCombo" layoutX="127.0" layoutY="31.0" prefWidth="150.0" />
+      <Button layoutX="258.0" layoutY="165.0" mnemonicParsing="false" onAction="#generateReportButton" text="Generate Report" />
+      <DatePicker fx:id="reportDatepicker" layoutX="399.0" layoutY="31.0" />
+      <Label layoutX="52.0" layoutY="80.0" text="Department" />
+      <ComboBox fx:id="departmentCombo" layoutX="126.0" layoutY="76.0" prefWidth="150.0" />
+      <TextField fx:id="performancePointText" layoutX="161.0" layoutY="124.0" />
+      <Label layoutX="51.0" layoutY="128.0" text="Performance Point:" />
+      <TableView fx:id="tableview" layoutX="52.0" layoutY="257.0" prefHeight="200.0" prefWidth="549.0">
+        <columns>
+          <TableColumn fx:id="employeeIDCol" prefWidth="102.0000114440918" text="Employee ID" />
+          <TableColumn fx:id="reportPeriodCol" prefWidth="130.00000762939453" text="Report Period" />
+            <TableColumn fx:id="departmentCol" prefWidth="148.66668701171875" text="Department" />
+            <TableColumn fx:id="performancePointCol" prefWidth="168.66665649414062" text="Performance Point" />
+        </columns>
+      </TableView>
+      <Button layoutX="213.0" layoutY="227.0" mnemonicParsing="false" onAction="#searchButton" text="Search" />
+      <Button layoutX="267.0" layoutY="227.0" mnemonicParsing="false" onAction="#clearButton" text="Clear" />
+      <TextField fx:id="searchText" layoutX="52.0" layoutY="227.0" />
+   </children>
+</AnchorPane>

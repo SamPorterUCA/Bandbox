@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="527.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.summer26.section1.group8.bandbox.Mona_2320239.SystemAdministrator.MaintainEquipmentLifecycleRecordsController">
+   <children>
+      <Label layoutX="67.0" layoutY="47.0" text="Equipment ID" />
+      <Label layoutX="67.0" layoutY="91.0" text="Equipment Name" />
+      <Label layoutX="358.0" layoutY="99.0" text="Last maintainance Date" />
+      <Label layoutX="67.0" layoutY="146.0" />
+      <TextField fx:id="equipmentIDText" layoutX="160.0" layoutY="43.0" />
+      <TextField fx:id="equipmentName" layoutX="181.0" layoutY="87.0" />
+      <ComboBox fx:id="equipmentStatusCombo" layoutX="198.0" layoutY="142.0" prefWidth="150.0" />
+      <Button layoutX="318.0" layoutY="185.0" mnemonicParsing="false" onAction="#updateRecordButton" text="Update Record" />
+      <Button layoutX="198.0" layoutY="274.0" mnemonicParsing="false" onAction="#searchButton" text="Search" />
+      <DatePicker fx:id="lastmaintainanceDatepicker" layoutX="498.0" layoutY="95.0" />
+      <TableView fx:id="tableview" layoutX="24.0" layoutY="313.0" prefHeight="200.0" prefWidth="631.0">
+        <columns>
+          <TableColumn fx:id="equipmentIDCol" prefWidth="85.33334541320801" text="Equipment ID" />
+          <TableColumn fx:id="equipmentNameCol" prefWidth="161.3333511352539" text="Equipment Name" />
+            <TableColumn fx:id="equipmentStatusCol" prefWidth="110.6666259765625" text="Equipment Status" />
+            <TableColumn fx:id="lastmaintainanceDateCol" prefWidth="142.66659545898438" text="Last maintainance Date" />
+            <TableColumn fx:id="equipmentTypeCol" prefWidth="128.66670735677087" text="Equipment Type" />
+        </columns>
+      </TableView>
+      <Label layoutX="67.0" layoutY="146.0" text="Equipment Status" />
+      <ComboBox fx:id="equipmentTypeCombo" layoutX="470.0" layoutY="43.0" prefWidth="150.0" />
+      <Label layoutX="358.0" layoutY="47.0" text="Equipment Type" />
+      <TextField fx:id="searchText" layoutX="28.0" layoutY="274.0" />
+      <Button layoutX="266.0" layoutY="274.0" mnemonicParsing="false" onAction="#resetButton" text="Reset" />
+   </children>
+</AnchorPane>

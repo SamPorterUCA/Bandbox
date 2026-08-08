@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="466.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.summer26.section1.group8.bandbox.Mona_2320239.CleaningWorker.RecordMachineUsageInformationController">
+   <children>
+      <Label layoutX="57.0" layoutY="46.0" text="Machine ID " />
+      <Label layoutX="57.0" layoutY="90.0" text="Machine Type" />
+      <Label layoutX="57.0" layoutY="120.0" text="Usage Duration" />
+      <Label layoutX="344.0" layoutY="81.0" text="Remarks " />
+      <Label layoutX="57.0" layoutY="165.0" />
+      <TextField fx:id="machineIDText" layoutX="131.0" layoutY="42.0" />
+      <TextField fx:id="usageDurationtext" layoutX="150.0" layoutY="116.0" />
+      <TextArea fx:id="remarksTextArea" layoutX="407.0" layoutY="37.0" prefHeight="99.0" prefWidth="170.0" />
+      <ComboBox fx:id="machineTypeCombo" layoutX="140.0" layoutY="86.0" prefWidth="150.0" />
+      <Button layoutX="290.0" layoutY="152.0" mnemonicParsing="false" onAction="#saveDataButton" text="Save Data" />
+      <TableView fx:id="tableview" layoutX="19.0" layoutY="242.0" prefHeight="191.0" prefWidth="563.0">
+        <columns>
+          <TableColumn fx:id="machineIDCol" prefWidth="116.6666259765625" text="Machine ID" />
+          <TableColumn fx:id="machineTypeCol" prefWidth="169.33331298828125" text="Machine Type" />
+            <TableColumn fx:id="durationCol" prefWidth="132.0" text="Duration" />
+            <TableColumn fx:id="remarksCol" prefWidth="145.99993896484375" text="Remarks" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchText" layoutX="19.0" layoutY="190.0" />
+      <Button layoutX="190.0" layoutY="190.0" mnemonicParsing="false" onAction="#searchButton" text="Search" />
+      <Button layoutX="256.0" layoutY="190.0" mnemonicParsing="false" onAction="#clearButton" text="Clear" />
+   </children>
+</AnchorPane>
